@@ -1,0 +1,30 @@
+body{
+    font-family: 'Audiowide', cursive !important;
+    font-family: 'Iceland', cursive;
+    background-color: #000d1d !important;
+   
+    
+}
+
+.bg{
+
+    background: url("/assets/bg1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    
+
+
+
+}
+input, textarea {
+    background-color:#fffb00 !important;
+  }
+  @media only screen and (max-width: 427px){
+    .imgres{
+        display: none;
+    }
+  }
+
+ 

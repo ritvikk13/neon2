@@ -1,0 +1,483 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* (╯°□°）╯︵ ┻━┻ */
+  html,
+  body {
+    height: 100%;
+  }
+  
+  /* 〤◕‿◕〤 my body, my rules */
+  body {
+    background-image: url(../assets/bg1.gif);
+    cursor: url(".../assets/arrow22.png") ,auto!important;
+    background-repeat: no-repeat;
+
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: 103% 115%;
+   
+  
+    font-family: 'Audiowide', cursive;
+    font-family: 'Iceland', cursive;
+  
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+  }
+  
+  body::after {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 3;
+    background: #000;
+    animation: load 2s 1 forwards;
+    animation-delay: 500ms;
+  }
+  
+  @keyframes load {
+    0% {
+      opacity: 1;
+    }
+  
+    99% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+  
+  .main {
+    min-height: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /* (◐‿◑) NEON.GAME */
+  .title {
+    font-size: calc(86px + 4vw);
+    color: #fff;
+    letter-spacing: 3px;
+   
+  
+    margin-top: 45px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .title::before {
+    content: 'OP-NEON';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #4f9fea, 0 0 30px #4f9fea,
+      0 0 40px #4f9fea;
+  
+    animation: shadow 3s ease-in-out infinite alternate-reverse;
+  }
+  
+  .title::after {
+    content: 'OP-NEON';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  
+    text-shadow: 0 0 5px #ded0d0, 0 0 10px #ded0d0, 0 0 20px #db4fea,
+      0 0 40px #db4fea, 0 0 80px #db4fea, 0 0 100px #db4fea;
+    animation: shadow 3s ease-in-out infinite alternate;
+  }
+  
+  @keyframes shadow {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .title__link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* 〷◠‿◠〷 our products */
+  .internal {
+    height: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  
+    font-family: 'Audiowide', cursive;
+  }
+  
+  .internal__link {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+  }
+  
+  .internal__link:hover {
+    text-shadow: 0 0 4px #fff, 0 0 6px #fff, 0 0 8px #4f9fea, 0 0 20px #4f9fea,
+      0 0 30px #4f9fea, 0 0 15px #4f9fea, 0 0 60px #4f9fea;
+  }
+  
+  .internal__link:hover span:nth-child(1) {
+    animation: flicker 2s linear 2;
+    animation: flicker 0.2s linear 10;
+  }
+  
+  .internal__link:hover span:nth-child(2) {
+    animation: flicker 2s linear 2;
+  }
+  
+  .internal__link:hover span:nth-child(4) {
+    animation: flicker 1s linear 3;
+  }
+  
+  .internal__link:hover span:nth-child(7) {
+    animation: flicker 1s linear 3;
+  }
+  
+  .internal__link:hover span:nth-child(8) {
+    animation: flicker 1s linear 3;
+  }
+  
+  @keyframes flicker {
+    0%,
+    19.999%,
+    22%,
+    62.999%,
+    64%,
+    64.999%,
+    70%,
+    100% {
+      opacity: 0.99;
+    }
+    20%,
+    21.999%,
+    63%,
+    63.999%,
+    65%,
+    69.999% {
+      opacity: 0.1;
+    }
+  }
+  
+  .internal__link:not(:last-child) {
+    margin-bottom: 4px;
+  }
+  
+  /* (　-_･) ︻デ═一  ▸ external links */
+  .external {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    /* transform: translateX(-50%); */
+    display: flex;
+  }
+  .button2:hover{
+   
+    box-shadow: 0 0 10px 0 #ff00ff inset, 0 0 20px 2px#ff00ff;
+    /* border: 3px solid #00d7c3; */
+  
+}
+  .button1:hover{
+   
+      box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+      /* border: 3px solid #00d7c3; */
+    
+ }
+  .external__image {
+   /*  display: block;
+    width: 50px;
+    height: 50px;
+    padding: 10px; */
+  }
+  
+  .external__link {
+    text-decoration: none;
+    background-color: #6611e4;
+    border-radius: 5px;
+  }
+  
+  .external__link:not(:last-child) {
+    margin-right: 11px;
+  }
+  
+  /* \_(♥‿♥)_/ BIG DISPLAY styles */
+  @media (min-width: 576px) {
+    body {
+      background-size: cover;
+      background-position-x: center;
+      background-position-y: 60%;
+    }
+  
+    .title {
+      margin-top: 100px;
+      margin-bottom: 0px;
+    }
+  
+    .internal__link {
+      font-size: 28px;
+    }
+  
+    .internal__link:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  
+    .external {
+      bottom: unset;
+      left: unset;
+      top: 30px;
+      right: 30px;
+    }
+  }
+
+  /* custom design for  Responsive for mobile */
+
+  @media only screen and (max-width: 427px)  {
+
+
+    .myDIV{
+      writing-mode: horizontal-tb !important;
+      margin-top: 0px !important;
+      margin-left: 15px;
+
+      float: left;
+    }
+    .height0{
+      height: 14vh !important;
+      background-color:#00e9de !important;
+      width: none !important;
+      display: none !important;
+    }
+    .title {
+    
+      
+        font-size: calc(61px + 6vw) !important;
+    }
+
+    .button1 .button2{
+       width: 159px !important;
+    }
+    .musicbtn{
+      margin-top: 20px;
+      font-size: 10px;
+    }
+
+    .external {
+      display: none;
+    }
+    .footer{
+      position: absolute;
+      bottom: 0px;
+    }
+
+    .footer h5{
+      font-size: 13px;
+    }
+    .mobilenav{
+      display: block !important;
+    }
+
+
+
+    /* heigh 0vh */
+
+
+
+  }
+
+  /* Mobile navigation  */
+  .mobilenav{
+    display: none;
+  }
+
+
+
+  /* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #1110;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+/* ending navbar */
+
+
+.mscursor-cursor {
+  pointer-events: none;
+  position: fixed;
+  display: block;
+  border-radius: 0;
+  top: 0;
+  left: 0;
+  z-index: 9999999999999999;  
+}
+
+.mscursor-difference{
+  mix-blend-mode: difference;
+}
+
+.mscursor-circle {
+    transform-origin: center;
+    position: absolute;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 20px;
+}
+
+.mscursor-border-transform{
+  animation: border-transform 3s linear infinite;
+}
+
+@keyframes border-transform {
+  0%,
+  100% {
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+  }
+}
+
+.mscursor-scale{
+  transition: .5s ease;
+  transform: scale(1.6);
+}
+
+.mscursor-scale-outline{
+  transform:scale(1.9);
+  background-color: transparent !important;
+}
+
+
+.mscursor-nocursor{
+  cursor:none!important;
+}
+
+.greenicon:hover{
+  box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+      /* border: 3px solid #00d7c3; */
+
+}
+
+.pink:hover{
+  box-shadow: 0 0 10px 0 #ff00ff inset, 0 0 20px 2px#ff00ff;
+}
+
+@media only screen and (max-width: 377px){
+
+  
+
+
+ 
+
+  .button1{
+    width: 149px !important;
+  }
+  .button2{
+    width: 149px !important;
+  }
+
+
+
+
+
+}
+

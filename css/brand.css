@@ -1,0 +1,131 @@
+body{
+    font-family: 'Audiowide', cursive !important;
+    font-family: 'Iceland', cursive;
+    background-color: #06070c !important;
+   
+   
+    
+}
+
+.form-control{
+    background-color: #96484800 !important;
+    padding-top: 18px !important;
+    
+    border-radius: 0rem !important;
+    color:  #01ffff !important;
+
+    border: 2px solid white !important;
+}
+
+.form-control:focus {
+    color:  #01ffff !important;
+    background-color: var(--bs-form-control-bg);
+    border-color: #01ffff !important;
+    outline: 0;
+    box-shadow:  #01ffff;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white !important;
+    opacity: 1; /* Firefox */
+  }
+.wrap1{
+    /* background: url("../assets/brand-bg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     */
+}
+
+
+/* animation  */
+
+.pop-in {
+    animation-name: pop-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes pop-in {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+
+
+  .slide-up {
+    animation-name: slide-up;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes slide-up {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  /* slider */
+
+  .slider{
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width:auto ;
+  }
+
+  .slider  .slide-track{
+
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width:  calc(250px * 14);
+
+
+
+  }
+  
+  .slider .slide{
+    height: 100px;
+    width: 250px;
+
+  }
+
+  @keyframes scroll {
+
+    0%{
+
+      transform: translateX(0);
+
+
+    }
+    100%{
+
+      transform: translateX(calc(-250px * 7));
+
+    }
+    
+  }
+  
+
+ /* button hover */
+ .button2:hover{
+   
+  box-shadow: 0 0 10px 0 #ff00ff inset, 0 0 20px 2px#ff00ff;
+  /* border: 3px solid #00d7c3; */
+
+}
+.button1:hover{
+ 
+    box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3 !important;
+    /* border: 3px solid #00d7c3; */
+  
+}
